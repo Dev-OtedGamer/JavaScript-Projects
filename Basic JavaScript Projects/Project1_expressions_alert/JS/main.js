@@ -22,3 +22,10 @@ var Venue = "The lineup", Third = "Spammer Jay", First = "Top Dog", Second = "Ta
 document.write(First); // prints a variable
 
 "Tickets cost", 8.0 + 8.0 // Expression
+
+
+function changeBackgroundColor( ) {
+    document.body.style.backgroundColor = 'blue'; // Function for changing the background when the browser is resized
+  }
+
+window.addEventListener('resize', changeBackgroundColor); // window listner for checking if browser is resized
