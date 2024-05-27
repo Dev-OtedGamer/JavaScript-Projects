@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Information Form</title>
+        <link rel="stylesheet" href="Css/main.css">
         <script src="JS/main.js"></script>
     </head>
     
@@ -9,6 +13,33 @@
         <button >
             <p onclick="Name_Function()" id="Welcome">Click me!</p>
         </button>
+
+        <div class="container">
+            <h1>Update User Information</h1>
+            <form id="userForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                
+                <button type="button" onclick="updateUserInfo()">Submit</button>
+            </form>
+            
+            <div id="userInfo">
+                <h2>Current User Information</h2>
+                <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+                <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                <p><strong>Phone Number:</strong> <span id="displayPhoneNumber"></span></p>
+            </div>
+        </div>
         
     </body>
 </html>
