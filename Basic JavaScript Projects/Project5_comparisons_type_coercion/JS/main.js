@@ -14,7 +14,9 @@ function my_Function() {
     //using isNaN (Not a Number) function to output true and false
     document.getElementById("Test").innerHTML = "0/0" + " = " + 0/0 + "<br><br>" +
     "('Hello')" + " Not a number! " + " = " + isNaN('This is a string') + "<br><br>"
-    + "(2896)" + " Not a number! " + " = " + isNaN(2896);
+    + "(2896)" + " Not a number! " + " = " + isNaN(2896) + "<br><br>" +
+    "(5 * \"3\")" + " = " + (5 * "3") + "<br><br>" +
+    "(\"five\" * 3)" + " = " + ("five" * 3) ;
 }
 
 function my2nd_Function() {
