@@ -79,3 +79,5 @@ function Time_function() {
     }
     document.getElementById("Time_of_day").innerHTML = Reply; // Preforms the "Reply" message
 }
+
+
