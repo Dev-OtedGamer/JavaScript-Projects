@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrow Function Challenge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <h1>Arrow Function Challenge</h1>
+    <!-- Paragraph and button for the full function -->
+    <p id="My_Function"></p>
+    <button onclick="my_Function()">Full Function</button>
+
+    <!-- Paragraph and button for the arrow function -->
+    <p id="My_Function2"></p>
+    <button onclick="my_Function2()">Arrow Function</button>
+
+    <script>
+        // Full function to calculate and display result
+        function my_Function() {
+            var X = 25;
+            var Y = 3.5;
+            var Z = 46;
+            // Display the result of X * (Y + Z)
+            document.getElementById("My_Function").innerHTML = X * (Y + Z);
+        }
+
+        // Arrow function to perform the same calculation
+        const myArrowFunction = (val1, val2, val3) => val1 * (val2 + val3);
+
+        // Function to call the arrow function and display the result
+        function my_Function2() {
+            var X = 25;
+            var Y = 3.5;
+            var Z = 46;
+            // Display the result of the arrow function
+            document.getElementById("My_Function2").innerHTML = myArrowFunction(X, Y, Z);
+        }
+    </script>
+
+</body>
+</html>
+
