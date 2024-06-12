@@ -1,0 +1,85 @@
+body {
+    background-color: orange;
+}
+
+
+h1 {
+    font-family: cursive;
+    text-align: center;
+    color: darkred;
+    text-shadow: 2px 2px yellow;
+}
+
+h3 {
+    font-family: cursive;
+    color: darkred;
+    text-shadow: 2px 2px yellow;
+}
+
+div {
+    font-family: fantasy;
+    color: darkred;
+    text-shadow: 1px 1px 1px rgb(238, 214, 76);
+}
+
+#menuBG {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 650px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 20px auto;
+    float: right;
+}
+
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.center {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top:0;margin:0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 25px auto;
+}
+
+#pizzaCanvas {
+    margin-top: 20px;
+    border: 1px solid black;
+}
