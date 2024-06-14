@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <p class="p" id="p1">1 Click Me</p>
+    <p class="p" id="p2">2 Click Me</p>
+    <p class="p" id="p3">3 Click Me</p>
+    
+    <script>
+        $(document).ready(function() {
+            // Switching handlers using the `.one()` method
+            $("p").one("click", firstClick);
+            
+            function firstClick() {
+                console.log("You just clicked this for the first time!");
+
+                // Now set up the new handler for subsequent clicks
+                $(this).click(function() { 
+                    console.log("You have clicked this before!"); 
+                });
+            }
+            
+            // Hide <p>3 when clicking on <p>2
+            $("#p2").click(function() {
+                $("#p3").hide();
+            });
+
+            // Show <p>2 when clicking on <p>1
+            $("#p1").click(function() {
+                $("#p2").show();
+            });
+
+            // Hide <p>2 when clicking on <p>3
+            $("#p3").click(function() {
+                $("#p2").hide();
+            });
+
+            // Show <p>3 when clicking on <p>1
+            $("#p1").click(function() {
+                $("#p3").show();
+            });
+        });
+    </script>
+</body>
+</html>
+
