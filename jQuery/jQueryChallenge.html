@@ -16,28 +16,28 @@
             function firstClick() {
                 console.log("You just clicked this for the first time!");
 
-                // Now set up the new handler for subsequent clicks
+                // Now sets up the new handler for subsequent clicks
                 $(this).click(function() { 
-                    console.log("You have clicked this before!"); 
+                    console.log("You have clicked this before!"); // Remember to open console to see message
                 });
             }
             
-            // Hide <p>3 when clicking on <p>2
+            // Hides <p>3 when clicking on <p>2
             $("#p2").click(function() {
                 $("#p3").hide();
             });
 
-            // Show <p>2 when clicking on <p>1
+            // Shows <p>2 when clicking on <p>1
             $("#p1").click(function() {
                 $("#p2").show();
             });
 
-            // Hide <p>2 when clicking on <p>3
+            // Hides <p>2 when clicking on <p>3
             $("#p3").click(function() {
                 $("#p2").hide();
             });
 
-            // Show <p>3 when clicking on <p>1
+            // Shows <p>3 when clicking on <p>1
             $("#p1").click(function() {
                 $("#p3").show();
             });
