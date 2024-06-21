@@ -1,0 +1,236 @@
+/* General body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+/* Universal box-sizing for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style for the nav section */
+nav {
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
+.section {
+    margin-top: 60px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Initial hidden state */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+/* Final visible state after loading */
+.loaded .fade-in {
+    opacity: 1;
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Popup form styling */
+.open-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 14px 18px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    position: relative;
+    bottom: 20px;
+    right: 25px;
+    width: 260px;
+    border-radius: 8px;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    border: 3px solid #007BFF;
+    z-index: 8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    max-width: 320px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=email] {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=email]:focus {
+    background-color: #e6e6e6;
+    outline: none;
+    border-color: #007BFF;
+}
+
+.form-container .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 14px 18px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 12px;
+    opacity: 0.9;
+    border-radius: 4px;
+}
+
+.form-container .cancel {
+    background-color: #dc3545;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/* Keyframe section */
+.box {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from { left: 0px; }
+    to { left: 200px; }
+}
+
+/* Image zoom in/out effect */
+.zoom-image {
+    width: 300px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    animation: zoom 5s infinite;
+}
+
+@keyframes zoom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+/* Slideshow Effect */
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+  
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+/* Sticky contact button styling */
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: transparent; /* Make the background transparent */
+    padding: 0; /* Remove padding to keep the button at the corner */
+    font-size: 20px;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 50px; /* Make it circular */
+    box-shadow: 0 9px #999;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+  

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Final Challenges</title>
+    <link rel="stylesheet" href="CSS/JSFinalChallenges.css">
+    <!-- Load the jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script defer src="JS/JSFinals.js"></script>
+</head>
+<body>
+    <!-- NAV SECTION/HTML BOOKMARKS-->
+    <nav>
+        <a href="#size-fade">Size/Fade</a>
+        <a href="#phoneInput">Phone Number Input</a>
+        <a href="#keyframeMove">Keyframe Animation Movment</a>
+        <a href="#stickyButton">Sticky Button</a>
+        <a href="#ImageZoom">Image Zoom In/Out</a>
+        <a href="#slideshow">Slideshow</a>
+        <a href="#popup">Popup Form</a>
+    </nav>
+
+    <!--VW SIZE EFFECT/FADE IN EFFECT-->
+    <section id="size-fade" class="section">
+        <h2>Size & Fade</h2>
+        <h1 class="fade-in" style="font-size:7vw">Hello, Everyone!</h1>
+        <p class="fade-in" style="font-size:3vw">Resize the browser to watch the font change size.</p>
+    </section>
+
+    <!--HR Horizontal Rule-->
+    <div>
+        <h2>Horizontal Rule</h2>
+       <hr> 
+    </div>
+
+    <!--Double Click -->
+    <section id="dblClick" class="section">
+        <button Class="button" ondblclick="randomColorBg()">Double Click</button>
+    </section>
+    
+
+    <!--PHONE NUMBER FORM-->
+    <section id="phoneInput" class="section">
+        <h2>Phone Input</h2>
+        <form id="phoneForm">
+            <label for="phone">Phone Number:</label><br>
+            <input type="number" id="phone" name="phone" required autocomplete="tel"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!--KEYFRAME ANIMATION-->
+    <section id="keyframeMove" class="section">
+        <h1>The @keyframes Rule</h1>
+        <div class="box"></div>
+    </section>
+
+    <!--STICKY BUTTON POPUP FORM-->
+        <h2 id="stickyButton">Sticky Button</h2>
+        <div class="sticky" style="float: right">
+            <button class="button" onclick="openContactForm()">Contact</button>
+        </div>
+        <div class="form-popup" id="contactForm">
+            <form id="contactFormContainer" class="form-container">
+                <h1>Contact</h1>
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" id="fname" placeholder="First Name" name="fname" required autocomplete="First Name">
+                <label for="lname"><b>Last Name</b></label>
+                <input type="text" id="lname" placeholder="Last Name" name="lname" required autocomplete="Last Name">
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email" placeholder="Enter Email" name="email" required autocomplete="Valid Email">
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeContactForm()">Close</button>
+            </form>
+        </div>
+   
+
+    <!--IMAGE ZOOM IN/OUT EFFECT-->
+    <section id="ImageZoom" class="section">
+        <h1>Image Zoom In/Out</h1>
+        <div class="container">
+            <img src="Images/Loving Yourself Photo.png" alt="Zoom Effect Image" class="zoom-image">
+        </div>
+    </section>
+
+    <!--SlideShow-->
+    <section id="slideshow">
+        <div>My Inspiration for these photos is to raise mental health awareness.<br>
+             I wanted the back ground photos to be of flowers.</div>
+        <div>
+            <img src="Images/Loving Yourself SML Photo.png">
+            This guy looking so cute and sad I had to use him.
+        </div>
+        <div>First I had to figure out what my favorite flower was, or what flowers I liked.</div>
+        <div>
+            <img src="Images/Being Different SML Photo.png">
+            "Blue Dragon Rose"
+        </div>
+        <div>I have always liked the exotic plants and flowers, especially the carnivorous ones.</div>
+        <div>
+            <img src="Images/Feeding thoughts SML.png">
+            "Blue Clip Venus Flytrap"
+        </div>
+        <div>Like the Venus Flytrap,</div>
+        <div>
+            <img src="Images/You have Beauty SML photo.png">
+            "Amorphophallus Titanum"-"Titan Arum"-"Corpse Flower"
+        </div>
+        <div>And Corpse Flower.</div>
+        <div>
+            <img src="Images/Guarding your Heart SML.png">
+            "Purple Passion Flower Vine"
+        </div>
+        <div>This vine looked pretty cool too I thought.</div>
+    </section>
+
+    <!--POPUP FORM-->
+    <section id="popup" class="section">
+        <h2>Popup Form</h2>
+        <p>Click on the button at the bottom of this page to open the login form.</p>
+        <button class="open-button" onclick="openForm()">Open Form</button>
+        <div class="form-popup" id="myForm">
+            <form id="loginForm" class="form-container">
+                <h1>Login</h1>
+                <label for="email"><b>Email</b></label>
+                <input type="text" id="email" placeholder="Enter Email" name="email" required autocomplete="email">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="psw" placeholder="Enter Password" name="psw" required autocomplete="current-password">
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+
