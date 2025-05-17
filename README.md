@@ -16,7 +16,7 @@ welcome to my GitHub! here are some of the projects I've worked on while learnin
 [Calculator.js](https://github.com/Dev-OtedGamer/JavaScript-Projects/blob/main/Calculator/Javascript/Calculator_Javascript.js)
 
 ## Project 4: [Final JavaScript Challenges](https://github.com/Dev-OtedGamer/JavaScript-Projects/blob/main/JS%20final%20challenges/IndexChallenges.html)
-**Description:** I was not as far ahead in my courses so I did not take the time to design a website. I still took the time to do all the challenges and listed most of them on the html document. 
+**Description:** I took the time to do all the challenges and listed most of them on the html document. 
 [Final.js](https://github.com/Dev-OtedGamer/JavaScript-Projects/blob/main/JS%20final%20challenges/JS/JSFinals.js)
 
 ## Project 5: [To-Do App](https://github.com/Dev-OtedGamer/JavaScript-Projects/blob/main/todo_app/Index.html)
